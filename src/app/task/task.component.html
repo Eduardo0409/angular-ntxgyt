@@ -1,0 +1,29 @@
+<br />
+
+<h3>Minhas Tasks</h3>
+
+<div class="input-group ab-2">
+  <input type="text" class="form-control" placeholder="Task title" #title />
+  <button
+    class="btn btn-primary"
+    (click)="this.tasks.add(title.value); title.value = ''"
+  >
+    +
+  </button>
+</div>
+
+<table class="table">
+  <tr>
+    <th>Task</th>
+    <th>Command</th>
+  </tr>
+  <tr *ngFor="let task of this.tasks.getList(); index as i">
+    <td>{{ task.title }}</td>
+    <td>
+      <button
+        class="btn btn-danger btn-sm"
+        (click)="this.tasks.remove(i)"
+      ></button>
+    </td>
+  </tr>
+</table>

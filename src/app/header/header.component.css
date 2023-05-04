@@ -1,0 +1,10 @@
+header{
+  background: rgb(42, 47, 48);
+  margin: 10px;
+}
+
+p{
+  align-items: center;
+  color: red;
+  text-align: center;
+}

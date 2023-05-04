@@ -1,0 +1,6 @@
+<div>
+  <input type="button" value="Iniciar" (click)="timer.start()" />
+  <input type="button" value="Parar" (click)="timer.stop()" />
+</div>
+
+<div>{{ timer.getCounter() }}s</div>
